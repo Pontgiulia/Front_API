@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerenciar Usuários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Cadastrar Usuário</h2>
+  <form id="formCadastro">
+    <input type="text" id="name" placeholder="Nome" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="number" id="idade" placeholder="Idade" required>
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <h2>Lista de Usuários</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Idade</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaUsuarios"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
