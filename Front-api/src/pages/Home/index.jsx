@@ -12,7 +12,7 @@ function Home() {
   const [formData, setFormData] = useState({ nome: '', email: '', idade: '' });
   const [editingId, setEditingId] = useState(null); // ID do usuário que está sendo editado
   useEffect(() => {
-    // ativa o cursor ✨
+    // ativa o cursor
     const cursor = fairyDustCursor({
       colors: ["#4bb4d6", "#e3cb46", "#d64bcf"], // paleta
       fairySymbol: "✴", // símbolo (pode trocar por "★", "❄", "❤", "✦", "ツ" etc.)
