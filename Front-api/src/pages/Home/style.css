@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #4bb4d6, #46e3b7);
+  background: linear-gradient(135deg, #4bb4d6, #e3cb46, #d64bcf); 
   color: #fff;
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@ body {
 
 .form-section {
   flex: 0 1 350px; 
-  background: rgba(0, 0, 0, 0.2);
+  background: #4bb3d641;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -35,7 +35,7 @@ body {
 }
 
 .form-section h1 {
-  background: rgba(255,255,255,0.2);
+  background: #4bd6a850;
   padding: 10px;
   border-radius: 15px;
   text-align: center;
@@ -52,12 +52,12 @@ body {
 }
 
 .form-section input {
-  background: rgba(255,255,255,0.6);
+  background: #d64bcf1e;
   color: #000;
 }
 
 .form-section button {
-  background: rgba(0, 200, 150, 0.9);
+  background: rgba(200, 0, 157, 0.9);
   color: #fff;
   font-weight: bold;
   cursor: pointer;
@@ -65,7 +65,7 @@ body {
 }
 
 .form-section button:hover {
-  background: rgba(0, 200, 150, 1);
+  background: #e3cb46;
 }
 
 /* Área de usuários */
@@ -86,7 +86,7 @@ body {
 
 /* Card do usuário */
 .card {
-  background: rgba(255, 255, 255, 0.25);
+  background: #4bb3d641;
   border-radius: 20px;
   padding: 15px;
   color: #000;
