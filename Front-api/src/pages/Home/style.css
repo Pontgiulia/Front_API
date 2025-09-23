@@ -2,13 +2,15 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #4bb4d6, #e3cb46, #d64bcf); 
+  background: linear-gradient(135deg, #4bb4d6, #e3cb46, #d64bcf);
   color: #fff;
+
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow-y: auto; 
+  align-items: flex-start; 
+  padding: 40px 0; 
+  box-sizing: border-box;
 }
 
 
@@ -17,9 +19,9 @@ body {
   gap: 30px;
   width: 90%;
   max-width: 1200px;
-  justify-content: center; 
-  align-items: flex-start; 
-  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 
@@ -35,7 +37,7 @@ body {
 }
 
 .form-section h1 {
-  background: #4bd6a850;
+  background: #4bd6a83f;
   padding: 10px;
   border-radius: 15px;
   text-align: center;

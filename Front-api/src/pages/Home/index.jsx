@@ -1,4 +1,7 @@
 import { useEffect, useState } from 'react';
+//import { bubbleCursor } from "../../services/BolhaCursor.js";
+//import { rainbowCursor } from "../../services/ArcoIris.js";
+import { fairyDustCursor } from "../../services/fada.js";
 import './style.css';
 import Lixeira from "../../assets/lixeira-de-reciclagem.png";
 import Lapis from "../../assets/lapis.png";
@@ -8,6 +11,37 @@ function Home() {
   const [usuarios, setUsuarios] = useState([]);
   const [formData, setFormData] = useState({ nome: '', email: '', idade: '' });
   const [editingId, setEditingId] = useState(null); // ID do usuário que está sendo editado
+  useEffect(() => {
+    // ativa o cursor ✨
+    const cursor = fairyDustCursor({
+      colors: ["#4bb4d6", "#e3cb46", "#d64bcf"], // paleta
+      fairySymbol: "✴", // símbolo (pode trocar por "★", "❄", "❤", "✦", "ツ" etc.)
+      zIndex: 9999,
+    });
+
+    return () => cursor.destroy(); // limpa quando desmontar
+  }, []);
+  // useEffect(() => {
+  //   const cursor = rainbowCursor({
+  //     length: 25,
+  //     size: 4,
+  //     zIndex: 9999,
+  //   });
+
+  //   return () => cursor.destroy(); // remove ao desmontar
+  // }, []);
+
+  // useEffect(() => {
+  //   const cursor = bubbleCursor({
+  //     fillColor: "#e6f1f7",   // Cor interna da bolha
+  //     strokeColor: "#3a92c5", // Borda da bolha
+  //     zIndex: "9999999999"    // Garantir que fique acima dos elementos
+  //   });
+
+  //   return () => {
+  //     cursor.destroy(); // remove ao sair da página
+  //   };
+  // }, []);
 
   // Pegar lista de usuários
   async function getUsuarios() {
